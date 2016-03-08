@@ -5,6 +5,8 @@ addons:
   apt:
     packages:
     - cmake
+    - libxml2
+    - libxml2-dev
 install:
   - mkdir $HOME/usr
   - curl -L -O http://xrootd.org/download/v4.3.0/xrootd-4.3.0.tar.gz
