@@ -20,6 +20,9 @@ install:
   - make
   - make install
   - cd -
+before_script:
+  - export PATH=$HOME/usr/bin
+  - export LD_LIBRARY_PATH=$HOME/usr/lib
 # command to run tests
 script:
   - python foo.py
