@@ -8,6 +8,7 @@ addons:
     - libxml2
     - libxml2-dev
     - libxml++2.6-dev
+    - libxml2-utils
     - libxslt1-dev
 install:
   - mkdir $HOME/usr
