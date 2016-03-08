@@ -15,7 +15,9 @@ install:
   - curl -L -O http://xrootd.org/download/v4.3.0/xrootd-4.3.0.tar.gz
   - tar xzf xrootd-4.3.0.tar.gz
   - mkdir xrootd-build && cd xrootd-build
-  - cmake ../xrootd-4.3.0 -DCMAKE_INSTALL_PREFIX=$HOME/usr -DENABLE_PERL=FALSE
+  - ls /usr/include
+  - ls /usr/include/libxml2
+  - cmake ../xrootd-4.3.0 -DCMAKE_INSTALL_PREFIX=$HOME/usr -DENABLE_PERL=FALSE -DEO_SOURCE_DIR:PATH=/usr/include/libxml2
   - make
   - make install
   - cd -
