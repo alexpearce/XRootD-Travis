@@ -1,10 +1,7 @@
 language: python
 python:
   - "2.7"
-addons:
-  apt:
-    packages:
-    # - libxml2-dev
+  - "3.5"
 install:
   - mkdir $HOME/usr
   - curl -L -O http://xrootd.org/download/v4.3.0/xrootd-4.3.0.tar.gz
