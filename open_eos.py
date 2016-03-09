@@ -77,13 +77,3 @@ class open_eos(object):
 
     def __repr__(self):
         return 'open_eos({0!r})'.format(self.path)
-
-
-if __name__ == '__main__':
-    log.getLogger().setLevel(log.DEBUG)
-    test_path = '/eos/lhcb/user/a/apearce/test.txt'
-    with open_eos(test_path) as f:
-        print '-'*20, 'File contents', '-'*20
-        print ''.join(f.readlines())
-        print '-'*20
-    print open_eos(test_path)
